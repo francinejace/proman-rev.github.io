@@ -1,29 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <title>PMI Reviewer Quiz</title>
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <div class="container">
-  
-  <h1>PMI Certification Reviewer</h1>
+    <div class="container">
 
-    <div class="top-bar">
-    <div id="progress-container">
-    <div id="progress"></div>
-  </div>
+        <h1>PMI Certification Reviewer</h1>
 
-  <div id="score">Score: 0</div>
-  </div>
+        <div class="mode-select">
+            <button onclick="startQuiz('review')">Reviewer Mode</button>
+            <button onclick="startQuiz('exam')">Exam Mode</button>
+        </div>
 
-  <div id="quiz"></div>
+        <div id="quizArea" style="display:none;">
 
-  </div>
+            <div class="topbar">
+                <div id="progressBar">
+                    <div id="progress"></div>
+                </div>
 
-  <script src="script.js"></script>
+                <div id="scoreBox">
+                    Score: 0
+                </div>
+            </div>
+
+            <div id="questionBox"></div>
+
+            <div class="nav">
+                <button id="prevBtn">Previous</button>
+                <button id="nextBtn">Next</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="popup" class="popup">
+
+        <div class="popup-content">
+            <p id="explanationText"></p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+
 </body>
+
 </html>
