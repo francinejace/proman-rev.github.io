@@ -273,4 +273,264 @@ const questions = [
     explanation: "The project manager coordinates project work."
 }
 
+{
+    type: "single",
+    q: "What is project procurement?",
+    choices: [
+        "The purchasing of external goods and services needed to complete a project",
+        "The analysis of business requirements needed to complete a project",
+        "The identification of funding requirements",
+        "Planning communication methods for a project"
+    ],
+    answer: [0],
+    explanation: "Procurement involves acquiring goods or services from outside vendors to support the project."
+},
+
+{
+    type: "single",
+    q: "In a project, what describes work that should be included and work that should be excluded?",
+    choices: [
+        "Project baseline",
+        "Scope statement",
+        "Business case",
+        "Work breakdown structure"
+    ],
+    answer: [1],
+    explanation: "The scope statement defines what is included and excluded in the project."
+},
+
+{
+    type: "single",
+    q: "You are estimating project cost using the budget from a similar project last month. What estimation method is this?",
+    choices: [
+        "Expert judgment estimation",
+        "Three-point estimation",
+        "Bottom-up estimation",
+        "Analogous estimation"
+    ],
+    answer: [3],
+    explanation: "Analogous estimation uses historical data from previous projects."
+},
+
+{
+    type: "single",
+    q: "Why should you archive project documents and processes?",
+    choices: [
+        "To complete the project management plan",
+        "To store them on the project manager's computer",
+        "To keep a historical record of project activities",
+        "To redistribute remaining resources"
+    ],
+    answer: [2],
+    explanation: "Archived documents help future teams learn from previous projects."
+},
+
+{
+    type: "single",
+    q: "What is the impact of scope creep on a project?",
+    choices: [
+        "Fewer resources are needed",
+        "The project takes longer to complete",
+        "A new project manager is assigned",
+        "The project includes fewer deliverables"
+    ],
+    answer: [1],
+    explanation: "Scope creep adds work to the project which increases schedule and cost."
+},
+
+{
+    type: "multi",
+    q: "Which characteristics belong to adaptive project management?",
+    choices: [
+        "Reliance on customer input throughout the project",
+        "Increased flexibility to adjust the project",
+        "Completion strictly according to the initial plan",
+        "Continuous refinement of product features"
+    ],
+    answer: [0,1,3],
+    explanation: "Adaptive methods rely heavily on stakeholder feedback and allow flexibility in project execution."
+},
+
+{
+    type: "single",
+    q: "What is a vendor?",
+    choices: [
+        "A business analyst working with finance",
+        "An external supplier who provides goods or services",
+        "A procurement team member",
+        "A professional who sells the final product"
+    ],
+    answer: [1],
+    explanation: "Vendors supply goods or services required for the project."
+},
+
+{
+    type: "single",
+    q: "What information should be included in a project status update?",
+    choices: [
+        "Project work that has been completed",
+        "A list of stakeholders",
+        "Project objectives",
+        "Project scope description"
+    ],
+    answer: [0],
+    explanation: "Status updates typically focus on completed work, current progress, and upcoming tasks."
+},
+
+{
+    type: "single",
+    q: "Which document defines how project communications will be handled?",
+    choices: [
+        "Communication management plan",
+        "Risk management plan",
+        "Procurement plan",
+        "Scope management plan"
+    ],
+    answer: [0],
+    explanation: "The communication management plan outlines how information will be shared with stakeholders."
+},
+
+{
+    type: "single",
+    q: "Which role is responsible for funding the project?",
+    choices: [
+        "Project manager",
+        "Project sponsor",
+        "Team lead",
+        "Business analyst"
+    ],
+    answer: [1],
+    explanation: "The project sponsor provides funding and overall support for the project."
+},
+
+{
+    type: "single",
+    q: "What is a risk in project management?",
+    choices: [
+        "An event that has already happened",
+        "A potential event that may impact the project",
+        "A completed project task",
+        "A change request"
+    ],
+    answer: [1],
+    explanation: "Risks are uncertain events that may affect the project positively or negatively."
+},
+
+{
+    type: "single",
+    q: "What is the purpose of a risk register?",
+    choices: [
+        "To document project schedule",
+        "To track identified risks",
+        "To store stakeholder contacts",
+        "To record project deliverables"
+    ],
+    answer: [1],
+    explanation: "The risk register records identified risks, their impact, and mitigation strategies."
+},
+
+{
+    type: "single",
+    q: "Which project constraint relates to financial resources?",
+    choices: [
+        "Scope",
+        "Cost",
+        "Quality",
+        "Risk"
+    ],
+    answer: [1],
+    explanation: "Cost represents the financial resources allocated to the project."
+},
+
+{
+    type: "single",
+    q: "What tool is commonly used to visualize project tasks and timelines?",
+    choices: [
+        "Gantt chart",
+        "Risk register",
+        "Stakeholder map",
+        "Budget report"
+    ],
+    answer: [0],
+    explanation: "Gantt charts show project schedules and task dependencies visually."
+},
+
+{
+    type: "single",
+    q: "What does WBS stand for?",
+    choices: [
+        "Work Breakdown Structure",
+        "Workflow Business Strategy",
+        "Work Budget System",
+        "Work Business Summary"
+    ],
+    answer: [0],
+    explanation: "A Work Breakdown Structure divides project work into smaller components."
+},
+
+{
+    type: "single",
+    q: "Which document outlines how project risks will be managed?",
+    choices: [
+        "Risk management plan",
+        "Scope statement",
+        "Communication plan",
+        "Resource plan"
+    ],
+    answer: [0],
+    explanation: "The risk management plan defines how risks will be identified and handled."
+},
+
+{
+    type: "single",
+    q: "What is stakeholder engagement?",
+    choices: [
+        "Managing project documentation",
+        "Communicating and collaborating with stakeholders",
+        "Creating project schedules",
+        "Allocating resources"
+    ],
+    answer: [1],
+    explanation: "Stakeholder engagement involves working closely with stakeholders throughout the project."
+},
+
+{
+    type: "single",
+    q: "What is the primary purpose of project monitoring?",
+    choices: [
+        "Track project performance",
+        "Hire new team members",
+        "Increase project scope",
+        "Change project objectives"
+    ],
+    answer: [0],
+    explanation: "Monitoring ensures project performance aligns with the plan."
+},
+
+{
+    type: "single",
+    q: "What is the final phase of the project life cycle?",
+    choices: [
+        "Planning",
+        "Executing",
+        "Closing",
+        "Monitoring"
+    ],
+    answer: [2],
+    explanation: "The closing phase finalizes all activities and formally ends the project."
+},
+
+{
+    type: "single",
+    q: "Which technique helps identify project risks through brainstorming?",
+    choices: [
+        "Risk identification workshop",
+        "Budget planning",
+        "Stakeholder meeting",
+        "Quality inspection"
+    ],
+    answer: [0],
+    explanation: "Workshops help teams collaboratively identify potential risks."
+}
+
 ];
