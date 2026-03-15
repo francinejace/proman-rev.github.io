@@ -1,9 +1,11 @@
 window.onload = () => {
 
     const savedTheme = localStorage.getItem("theme");
+    const toggle = document.getElementById("themeToggle");
 
     if (savedTheme === "dark") {
         document.body.classList.add("dark-mode");
+        toggle.textContent = "☀️";
     }
 
 };
