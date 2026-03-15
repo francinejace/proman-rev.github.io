@@ -1,3 +1,13 @@
+window.onload = () => {
+
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme === "dark") {
+        document.body.classList.add("dark-mode");
+    }
+
+};
+
 let currentQuestion = 0;
 let score = 0;
 let mode = "review";
