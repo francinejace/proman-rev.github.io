@@ -112,24 +112,38 @@ function handleSingleAnswer(index, btn, q) {
 
 function handleMultiAnswer(index, checkbox) {
 
+    const q = questions[currentQuestion];
+
     if (!selectedAnswers[currentQuestion]) {
         selectedAnswers[currentQuestion] = [];
     }
 
     if (checkbox.checked) {
-
         selectedAnswers[currentQuestion].push(index);
-
     } else {
-
         selectedAnswers[currentQuestion] =
             selectedAnswers[currentQuestion].filter(a => a !== index);
-
     }
 
     if (mode === "review") {
 
-        const q = questions[currentQuestion];
+        const labels = document.querySelectorAll("#questionBox label");
+
+        labels.forEach((label, i) => {
+
+            const input = label.querySelector("input");
+
+            if (q.answer.includes(i)) {
+
+                label.classList.add("correct");
+
+            } else if (input.checked) {
+
+                label.classList.add("wrong");
+
+            }
+
+        });
 
         const correct =
             JSON.stringify([...selectedAnswers[currentQuestion]].sort()) ===
@@ -139,8 +153,8 @@ function handleMultiAnswer(index, checkbox) {
 
             score++;
             selectedAnswers[currentQuestion].scored = true;
-
             updateScore();
+
         }
 
         showExplanation(q.explanation);
