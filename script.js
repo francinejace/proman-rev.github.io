@@ -220,15 +220,19 @@ function updateProgress() {
 
 function toggleTheme() {
 
+    const toggle = document.getElementById("themeToggle");
+
     document.body.classList.toggle("dark-mode");
 
-    if (document.body.classList.contains("dark-mode")) {
+    if(document.body.classList.contains("dark-mode")){
 
-        localStorage.setItem("theme", "dark");
+        localStorage.setItem("theme","dark");
+        toggle.textContent="☀️";
 
-    } else {
+    }else{
 
-        localStorage.setItem("theme", "light");
+        localStorage.setItem("theme","light");
+        toggle.textContent="🌙";
 
     }
 
