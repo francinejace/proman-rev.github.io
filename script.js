@@ -216,6 +216,22 @@ function updateProgress() {
 
 }
 
+function toggleTheme() {
+
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+
+        localStorage.setItem("theme", "dark");
+
+    } else {
+
+        localStorage.setItem("theme", "light");
+
+    }
+
+}
+
 document.getElementById("nextBtn").onclick = () => {
 
     if (currentQuestion < questions.length - 1) {
