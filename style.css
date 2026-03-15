@@ -196,6 +196,20 @@ body.dark-mode .wrong {
     color: white !important;
 }
 
+label.correct {
+    background: #4CAF50;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+label.wrong {
+    background: #e74c3c;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+}
+
 /* POPUP TEXT FIX */
 
 body.dark-mode .popup-content {
