@@ -1,4 +1,4 @@
-# proman-rev.github.io
+# Project Management Quiz-Type Reviewer
 
 This project provides an interactive reviewer for the **Project Management Certification Examination**. It converts a traditional reviewer into a quiz-style web application that allows users to test their knowledge and immediately see feedback on their answers.
 
